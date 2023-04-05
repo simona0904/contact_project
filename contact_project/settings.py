@@ -131,7 +131,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # email settings
 
+# for development, print in console
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# for production
+# EMAIL_BACKEND = "django_smtp_ssl.SSLEmailBackend"
+# EMAIL_HOST = "mail.example.com"
+# EMAIL_PORT = 465
+# EMAIL_HOST_USER = "mail@example.com"
+# EMAIL_HOST_PASSWORD = "password12345"
+# EMAIL_USE_TLS = True
 
 # contact form settings
 
